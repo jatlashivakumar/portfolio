@@ -35,7 +35,7 @@ export default function Hero() {
             <button onClick={()=>document.getElementById('projects')?.scrollIntoView({behavior:'smooth'})}
               className="cursor-none inline-flex items-center gap-2 rounded-lg text-white font-semibold border-none hover:-translate-y-0.5 transition-all duration-200"
               style={{fontFamily:'Space Grotesk',fontSize:'.9rem',padding:'13px 28px',background:'#2260ff',boxShadow:'0 6px 28px rgba(34,96,255,0.35)'}}>
-              <svg width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>View Projects
+              <svg width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>View My Projects
             </button>
             <button onClick={()=>document.getElementById('contact')?.scrollIntoView({behavior:'smooth'})}
               className="cursor-none inline-flex items-center gap-2 rounded-lg font-medium hover:-translate-y-0.5 transition-all duration-200"
