@@ -38,8 +38,8 @@ export default function App() {
         <main>
           <Hero/>
           <About/>
-          <Projects/>
           <Experience/>
+          <Projects/>
           <Contact/>
         </main>
       </div>
