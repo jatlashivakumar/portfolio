@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Layout from './Layout'
@@ -7,8 +8,7 @@ const resumeLinks = [
     label: 'Full Stack Developer Resume',
     href: '/resumes/Jatla_Shivakumar_FullStack_Resume.pdf',
     description: 'React · Node.js · PostgreSQL · MongoDB',
-    primary: true,
-  }
+  },
 ]
 
 export default function Contact() {
@@ -50,120 +50,271 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-28 relative">
-      <div className="absolute pointer-events-none" style={{ top: '30%', left: '50%', transform: 'translate(-50%,-50%)', width: 700, height: 400, background: 'radial-gradient(ellipse,rgba(34,96,255,0.08),transparent 70%)' }} />
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          top: '30%',
+          left: '50%',
+          transform: 'translate(-50%,-50%)',
+          width: 700,
+          height: 400,
+          background: 'radial-gradient(ellipse,rgba(34,96,255,0.08),transparent 70%)',
+        }}
+      />
 
-      <div className="relative" style={{ zIndex: 1, maxWidth: 760, margin: '0 auto', paddingLeft: 'clamp(1.5rem,6vw,5rem)', paddingRight: 'clamp(1.5rem,6vw,5rem)', textAlign: 'center' }}>
-        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.9 }}>
-          <div className="flex items-center justify-center gap-2.5 mb-6" style={{ fontFamily: 'JetBrains Mono', fontSize: '.68rem', color: '#00e5ff', letterSpacing: '.2em', textTransform: 'uppercase' }}>
-            <span style={{ width: 28, height: 1, background: '#00e5ff', display: 'block' }} />Get In Touch
+      <div
+        className="relative"
+        style={{
+          zIndex: 1,
+          maxWidth: 760,
+          margin: '0 auto',
+          paddingLeft: 'clamp(1.5rem,6vw,5rem)',
+          paddingRight: 'clamp(1.5rem,6vw,5rem)',
+          textAlign: 'center',
+        }}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+        >
+          <div
+            className="flex items-center justify-center gap-2.5 mb-6"
+            style={{
+              fontFamily: 'JetBrains Mono',
+              fontSize: '.68rem',
+              color: '#00e5ff',
+              letterSpacing: '.2em',
+              textTransform: 'uppercase',
+            }}
+          >
+            <span style={{ width: 28, height: 1, background: '#00e5ff' }} />
+            Get In Touch
           </div>
 
-          <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: 'Space Grotesk', fontSize: 'clamp(2.5rem,5vw,4.5rem)', letterSpacing: '-0.04em', color: '#eef0ff' }}>
-            Let's build something<br /><span className="grad-text">exceptional.</span>
+          <h2
+            className="font-bold leading-tight mb-5"
+            style={{
+              fontFamily: 'Space Grotesk',
+              fontSize: 'clamp(2.5rem,5vw,4.5rem)',
+              letterSpacing: '-0.04em',
+              color: '#eef0ff',
+            }}
+          >
+            Let's build something
+            <br />
+            <span className="grad-text">exceptional.</span>
           </h2>
 
-          <p className="leading-[1.75] mb-8 max-w-md mx-auto" style={{ fontSize: '1rem', color: 'rgba(238,240,255,0.6)' }}>
-            Open to full-time Full Stack Developer and Frontend Developer opportunities, as well as interesting engineering collaborations. Feel free to reach out.
-          </p>
+          <p
+  className="mb-8"
+  style={{
+    fontSize: '1rem',
+    lineHeight: 1.8,
+    color: 'rgba(238,240,255,0.6)',
+    width: '100%',
+    maxWidth: '440px',
+    margin: '0 auto 32px',
+    textAlign: 'center',
+    whiteSpace: 'normal',
+    overflowWrap: 'break-word',
+    boxSizing: 'border-box',
+  }}
+>
+  Open to full-time Full Stack Developer and Frontend Developer
+  opportunities, as well as interesting engineering collaborations.
+  Feel free to reach out.
+</p>
 
-          <button onClick={copyEmail} className="cursor-none inline-flex items-center gap-2 rounded-xl text-white font-semibold mb-10 border-none hover:-translate-y-0.5 transition-all duration-200" style={{ fontFamily: 'Space Grotesk', fontSize: '1rem', padding: '16px 36px', background: '#2260ff', boxShadow: '0 6px 28px rgba(34,96,255,0.35)' }}>
+          <button
+            onClick={copyEmail}
+            className="cursor-none inline-flex items-center justify-center gap-2 rounded-xl text-white font-semibold mb-12 border-none hover:-translate-y-0.5 transition-all duration-200"
+            style={{
+              fontFamily: 'Space Grotesk',
+              fontSize: '1rem',
+              padding: '16px 36px',
+              background: '#2260ff',
+              boxShadow: '0 6px 28px rgba(34,96,255,0.35)',
+            }}
+          >
             {copied ? '✓ Email copied!' : '📧 jatlashiva75@gmail.com'}
           </button>
 
-          <div className="mb-12">
-            <h3 className="font-semibold mb-4" style={{ fontFamily: 'Space Grotesk', fontSize: '1.05rem', color: '#eef0ff' }}>Download my resume</h3>
-            
-<div className="mb-12">
-  <h3
-    className="font-semibold mb-5"
-    style={{
-      fontFamily: 'Space Grotesk',
-      fontSize: '1.05rem',
-      color: '#eef0ff'
-    }}
-  >
-    Download my resume
-  </h3>
+          {/* Resume section - only one heading and one card */}
+          <div className="mb-14">
+            <h3
+              className="font-semibold mb-5"
+              style={{
+                fontFamily: 'Space Grotesk',
+                fontSize: '1.05rem',
+                color: '#eef0ff',
+              }}
+            >
+              Download my resume
+            </h3>
 
-  <div className="flex justify-center">
-    {resumeLinks.map(resume => (
-      <a
-        key={resume.label}
-        href={resume.href}
-        download
-        className="cursor-none flex flex-col items-center text-center gap-3 rounded-2xl no-underline transition-all duration-200 hover:-translate-y-1 w-full max-w-md"
-        style={{
-          padding: '24px 28px',
-          background: 'rgba(34,96,255,0.12)',
-          border: '1px solid rgba(34,96,255,0.35)',
-          boxShadow: '0 8px 30px rgba(34,96,255,0.08)'
-        }}
-      >
-        <span
-          className="font-semibold"
-          style={{
-            fontFamily: 'Space Grotesk',
-            fontSize: '1rem',
-            color: '#eef0ff'
-          }}
-        >
-          {resume.label}
-        </span>
+            <div className="flex justify-center">
+              {resumeLinks.map((resume) => (
+                <a
+                  key={resume.label}
+                  href={resume.href}
+                  download
+                  className="group cursor-none flex flex-col items-center text-center gap-3 rounded-2xl no-underline transition-all duration-300 hover:-translate-y-1.5 w-full max-w-sm"
+                  style={{
+                    padding: '28px 24px',
+                    background: 'linear-gradient(145deg, rgba(34,96,255,0.14), rgba(255,255,255,0.025))',
+                    border: '1px solid rgba(34,96,255,0.3)',
+                    boxShadow: '0 12px 35px rgba(34,96,255,0.08)',
+                  }}
+                  onMouseEnter={(event) => {
+                    event.currentTarget.style.borderColor = 'rgba(0,229,255,0.55)'
+                    event.currentTarget.style.boxShadow = '0 15px 40px rgba(34,96,255,0.16)'
+                  }}
+                  onMouseLeave={(event) => {
+                    event.currentTarget.style.borderColor = 'rgba(34,96,255,0.3)'
+                    event.currentTarget.style.boxShadow = '0 12px 35px rgba(34,96,255,0.08)'
+                  }}
+                >
+                  <span
+                    className="flex items-center justify-center rounded-xl"
+                    style={{
+                      width: 48,
+                      height: 48,
+                      background: 'rgba(0,229,255,0.1)',
+                      color: '#00e5ff',
+                      fontSize: '1.5rem',
+                    }}
+                  >
+                    ↓
+                  </span>
 
-        <span
-          style={{
-            fontFamily: 'JetBrains Mono',
-            fontSize: '.68rem',
-            color: 'rgba(238,240,255,0.55)'
-          }}
-        >
-          {resume.description}
-        </span>
+                  <span
+                    className="font-semibold"
+                    style={{
+                      fontFamily: 'Space Grotesk',
+                      fontSize: '1rem',
+                      color: '#eef0ff',
+                    }}
+                  >
+                    {resume.label}
+                  </span>
 
-        <span
-          className="mt-1 font-semibold"
-          style={{
-            fontFamily: 'JetBrains Mono',
-            fontSize: '.72rem',
-            color: '#00e5ff'
-          }}
-        >
-          ↓ Download PDF
-        </span>
-      </a>
-    ))}
-  </div>
-</div>
+                  <span
+                    style={{
+                      fontFamily: 'JetBrains Mono',
+                      fontSize: '.68rem',
+                      color: 'rgba(238,240,255,0.55)',
+                    }}
+                  >
+                    {resume.description}
+                  </span>
 
+                  <span
+                    className="mt-2 rounded-lg px-5 py-2 font-semibold transition-colors duration-200 group-hover:bg-cyan-400 group-hover:text-slate-950"
+                    style={{
+                      fontFamily: 'JetBrains Mono',
+                      fontSize: '.72rem',
+                      color: '#00e5ff',
+                      border: '1px solid rgba(0,229,255,0.3)',
+                    }}
+                  >
+                    Download PDF
+                  </span>
+                </a>
+              ))}
+            </div>
           </div>
 
+          {/* Social and contact links */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
-            {links.map(link => (
+            {links.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target={link.href.startsWith('tel:') ? undefined : '_blank'}
                 rel={link.href.startsWith('tel:') ? undefined : 'noopener noreferrer'}
-                className="cursor-none flex items-center gap-3.5 rounded-2xl no-underline transition-colors duration-200"
-                style={{ padding: '20px', background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.06)' }}
-                onMouseEnter={event => { event.currentTarget.style.borderColor = 'rgba(34,96,255,0.4)' }}
-                onMouseLeave={event => { event.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)' }}
+                className="cursor-none flex items-center gap-3.5 rounded-2xl no-underline transition-all duration-200 hover:-translate-y-1"
+                style={{
+                  padding: '20px',
+                  background: 'rgba(255,255,255,0.025)',
+                  border: '1px solid rgba(255,255,255,0.06)',
+                }}
+                onMouseEnter={(event) => {
+                  event.currentTarget.style.borderColor = 'rgba(34,96,255,0.4)'
+                }}
+                onMouseLeave={(event) => {
+                  event.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'
+                }}
               >
-                <div style={{ color: link.color, opacity: 0.85, flexShrink: 0 }}>{link.icon}</div>
-                <div className="text-left min-w-0">
-                  <div className="font-semibold mb-0.5" style={{ fontFamily: 'Space Grotesk', fontSize: '.88rem', color: '#eef0ff' }}>{link.label}</div>
-                  <div className="truncate" style={{ fontFamily: 'JetBrains Mono', fontSize: '.62rem', color: 'rgba(238,240,255,0.6)' }}>{link.handle}</div>
+                <div style={{ color: link.color, opacity: 0.85, flexShrink: 0 }}>
+                  {link.icon}
                 </div>
-                <svg className="ml-auto flex-shrink-0" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" style={{ color: 'rgba(238,240,255,0.2)' }}><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7,7 17,7 17,17" /></svg>
+
+                <div className="text-left min-w-0">
+                  <div
+                    className="font-semibold mb-0.5"
+                    style={{
+                      fontFamily: 'Space Grotesk',
+                      fontSize: '.88rem',
+                      color: '#eef0ff',
+                    }}
+                  >
+                    {link.label}
+                  </div>
+                  <div
+                    className="truncate"
+                    style={{
+                      fontFamily: 'JetBrains Mono',
+                      fontSize: '.62rem',
+                      color: 'rgba(238,240,255,0.6)',
+                    }}
+                  >
+                    {link.handle}
+                  </div>
+                </div>
+
+                <svg
+                  className="ml-auto flex-shrink-0"
+                  width="13"
+                  height="13"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  style={{ color: 'rgba(238,240,255,0.2)' }}
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7,7 17,7 17,17" />
+                </svg>
               </a>
             ))}
           </div>
         </motion.div>
       </div>
 
-      <Layout className="mt-20 pt-8 flex flex-wrap items-center justify-between gap-4" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-        <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.65rem', color: 'rgba(238,240,255,0.35)' }}>© {new Date().getFullYear()} Jatla Shivakumar — Full Stack Developer</span>
-        <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.65rem', color: 'rgba(238,240,255,0.35)' }}>Hyderabad, India 🇮🇳</span>
+      <Layout
+        className="mt-20 pt-8 flex flex-wrap items-center justify-between gap-4"
+        style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}
+      >
+        <span
+          style={{
+            fontFamily: 'JetBrains Mono',
+            fontSize: '.65rem',
+            color: 'rgba(238,240,255,0.35)',
+          }}
+        >
+          © {new Date().getFullYear()} Jatla Shivakumar — Full Stack Developer
+        </span>
+        <span
+          style={{
+            fontFamily: 'JetBrains Mono',
+            fontSize: '.65rem',
+            color: 'rgba(238,240,255,0.35)',
+          }}
+        >
+          Hyderabad, India 🇮🇳
+        </span>
       </Layout>
     </section>
   )
