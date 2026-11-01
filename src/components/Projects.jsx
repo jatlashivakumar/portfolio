@@ -28,22 +28,6 @@ const projects = [
     color:'#2260ff', visual:'nexus', featured:true
   },
   {
-    id:'pulse', name:'Pulse', tag:'Real-Time Monitoring Dashboard',
-    desc:'WebSocket-driven analytics platform for live operational insights. Low-latency data ingestion with a reactive frontend keeping everything in real-time sync across all connected clients.',
-    techs:['Next.js','Socket.IO','MongoDB','Tailwind','Redux'],
-    ci:[3,1,4,0,2],
-    github:'https://github.com/jatlashivakumar',
-    color:'#ff6b2b', visual:'pulse', featured:true
-  },
-  {
-    id:'ecomm', name:'MERN Ecommerce', tag:'Full-Stack E-Commerce',
-    desc:'Complete MERN stack e-commerce with cart, JWT auth, payment flow, and admin dashboard. Full product lifecycle from browsing to checkout with role-based access.',
-    techs:['MongoDB','Express','React','Node.js','JWT'],
-    ci:[4,0,1,2,3],
-    github:'https://github.com/jatlashivakumar',
-    color:'#7c3aed', visual:'grid', featured:false
-  },
-  {
     id:'ubereats', name:'Uber Eats Clone', tag:'Food Delivery UI Clone',
     desc:'Pixel-perfect Uber Eats UI clone with restaurant listing, cart management, and responsive design. Built to master component architecture and Context API state management patterns.',
     techs:['React','Tailwind CSS','Context API','REST API'],
@@ -51,14 +35,7 @@ const projects = [
     github:'https://github.com/jatlashivakumar',
     color:'#00e5ff', visual:'grid', featured:false
   },
-  {
-    id:'weather', name:'Weather App', tag:'Real-Time Weather Dashboard',
-    desc:'Location-based weather app with OpenWeatherMap API, geolocation detection, 7-day forecast, and dynamic UI that adapts to current weather conditions.',
-    techs:['React','OpenWeather API','Geolocation','CSS3'],
-    ci:[1,0,2,4],
-    github:'https://github.com/jatlashivakumar',
-    color:'#7c3aed', visual:'grid', featured:false
-  },
+
 ]
 
 function FlowdeskVis() {
