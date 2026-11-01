@@ -96,9 +96,7 @@ export default function NavBar() {
                 {link}
               </motion.button>
             ))}
-            <a href="/resumes/Jatla_Shivakumar_FullStack_Resume.pdf" download className="no-underline font-semibold rounded-lg px-6 py-3" style={{ background: '#2260ff', color: '#fff', fontFamily: 'Space Grotesk' }}>
-              Download Full Stack Resume
-            </a>
+            
           </motion.div>
         )}
       </AnimatePresence>
