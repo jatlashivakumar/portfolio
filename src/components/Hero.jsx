@@ -65,7 +65,7 @@ const stats = [
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-28 pb-20">
-      <Layout className="w-full">
+      <Layout className="w-full"> 
         <motion.div variants={stagger} initial="hidden" animate="show">
           <motion.div
             variants={fadeUp}
@@ -104,7 +104,7 @@ export default function Hero() {
             </button>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="cursor-none inline-flex items-center gap-2 rounded-lg font-medium hover:-translate-y-0.5 transition-all duration-200"
+              className="cursor-none inline-flex items-center gap-2 rounded-lg font-medium hover:-translate-y-0.5 transition-all duration-200 mt-2"
               style={{ fontFamily: 'Space Grotesk', fontSize: '.9rem', padding: '13px 28px', background: 'transparent', color: '#eef0ff', border: '1px solid rgba(255,255,255,0.06)' }}
             >
               Get In Touch →

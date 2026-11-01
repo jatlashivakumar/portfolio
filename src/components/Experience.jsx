@@ -66,13 +66,27 @@ const experiences = [
   },
 ]
 
-const education = [
+const edu = [
   {
-    institution: "St. Martin's Engineering College",
-    degree: 'Bachelor of Technology — Computer Science',
+    inst: "St. Martin's Engineering College",
+    degree: 'B.Tech — Computer Science Engineering',
     period: 'June 2019 – July 2023',
     detail: 'CGPA: 7.6',
-    color: '#ff9a70',
+    color: '#ff6b2b',
+  },
+  {
+    inst: 'Narayana Junior College',
+    degree: 'Intermediate (MPC) — Class 12',
+    period: '2017 – 2019',
+    detail: 'Percentage: 94.5%',
+    color: '#2260ff',
+  },
+  {
+    inst: 'St. Don Bosco High School',
+    degree: 'SSC — Class 10',
+    period: '2016 – 2017',
+    detail: 'Percentage: 92%',
+    color: '#7c3aed',
   },
 ]
 
