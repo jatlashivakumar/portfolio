@@ -72,21 +72,69 @@ export default function Contact() {
 
           <div className="mb-12">
             <h3 className="font-semibold mb-4" style={{ fontFamily: 'Space Grotesk', fontSize: '1.05rem', color: '#eef0ff' }}>Download my resume</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
-              {resumeLinks.map(resume => (
-                <a
-                  key={resume.label}
-                  href={resume.href}
-                  download
-                  className="cursor-none flex flex-col gap-2 rounded-2xl no-underline transition-all duration-200 hover:-translate-y-0.5"
-                  style={{ padding: '18px 20px', background: resume.primary ? 'rgba(34,96,255,0.12)' : 'rgba(255,255,255,0.025)', border: `1px solid ${resume.primary ? 'rgba(34,96,255,0.35)' : 'rgba(255,255,255,0.08)'}` }}
-                >
-                  <span className="font-semibold" style={{ fontFamily: 'Space Grotesk', fontSize: '.9rem', color: '#eef0ff' }}>{resume.label}</span>
-                  <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.61rem', color: 'rgba(238,240,255,0.48)' }}>{resume.description}</span>
-                  <span className="mt-1" style={{ fontFamily: 'JetBrains Mono', fontSize: '.65rem', color: '#00e5ff' }}>↓ Download PDF</span>
-                </a>
-              ))}
-            </div>
+            
+<div className="mb-12">
+  <h3
+    className="font-semibold mb-5"
+    style={{
+      fontFamily: 'Space Grotesk',
+      fontSize: '1.05rem',
+      color: '#eef0ff'
+    }}
+  >
+    Download my resume
+  </h3>
+
+  <div className="flex justify-center">
+    {resumeLinks.map(resume => (
+      <a
+        key={resume.label}
+        href={resume.href}
+        download
+        className="cursor-none flex flex-col items-center text-center gap-3 rounded-2xl no-underline transition-all duration-200 hover:-translate-y-1 w-full max-w-md"
+        style={{
+          padding: '24px 28px',
+          background: 'rgba(34,96,255,0.12)',
+          border: '1px solid rgba(34,96,255,0.35)',
+          boxShadow: '0 8px 30px rgba(34,96,255,0.08)'
+        }}
+      >
+        <span
+          className="font-semibold"
+          style={{
+            fontFamily: 'Space Grotesk',
+            fontSize: '1rem',
+            color: '#eef0ff'
+          }}
+        >
+          {resume.label}
+        </span>
+
+        <span
+          style={{
+            fontFamily: 'JetBrains Mono',
+            fontSize: '.68rem',
+            color: 'rgba(238,240,255,0.55)'
+          }}
+        >
+          {resume.description}
+        </span>
+
+        <span
+          className="mt-1 font-semibold"
+          style={{
+            fontFamily: 'JetBrains Mono',
+            fontSize: '.72rem',
+            color: '#00e5ff'
+          }}
+        >
+          ↓ Download PDF
+        </span>
+      </a>
+    ))}
+  </div>
+</div>
+
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
