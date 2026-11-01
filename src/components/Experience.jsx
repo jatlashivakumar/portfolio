@@ -66,7 +66,7 @@ const experiences = [
   },
 ]
 
-const edu = [
+const education  = [
   {
     inst: "St. Martin's Engineering College",
     degree: 'B.Tech — Computer Science Engineering',
