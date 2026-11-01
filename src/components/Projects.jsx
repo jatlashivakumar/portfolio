@@ -27,14 +27,6 @@ const projects = [
     github:'https://github.com/jatlashivakumar',
     color:'#2260ff', visual:'nexus', featured:true
   },
-  {
-    id:'ubereats', name:'Uber Eats Clone', tag:'Food Delivery UI Clone',
-    desc:'Pixel-perfect Uber Eats UI clone with restaurant listing, cart management, and responsive design. Built to master component architecture and Context API state management patterns.',
-    techs:['React','Tailwind CSS','Context API','REST API'],
-    ci:[0,3,1,4],
-    github:'https://github.com/jatlashivakumar',
-    color:'#00e5ff', visual:'grid', featured:false
-  },
 
 ]
 
