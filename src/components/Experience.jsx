@@ -57,8 +57,8 @@ const exp = [
 
 const edu = [
   {inst:"St. Martin's Engineering College",degree:'B.Tech — Computer Science Engineering',period:'June 2019 – July 2023',detail:'CGPA: 7.6',color:'#ff6b2b'},
-  {inst:'Sri Chaitanya Junior College',degree:'Intermediate (MPC) — Class 12',period:'2017 – 2019',detail:'Score: 93%',color:'#2260ff'},
-  {inst:'Narayana High School',degree:'SSC — Class 10',period:'2016 – 2017',detail:'GPA: 9.2',color:'#7c3aed'},
+  {inst:'Narayana Junior College',degree:'Intermediate (MPC) — Class 12',period:'2017 – 2019',detail:'Score: 94.5%',color:'#2260ff'},
+  {inst:'St.Don Bosco High School',degree:'SSC — Class 10',period:'2016 – 2017',detail:'GPA: 9.2',color:'#7c3aed'},
 ]
 
 export default function Experience() {
