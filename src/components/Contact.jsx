@@ -6,7 +6,7 @@ import Layout from './Layout'
 const resumeLinks = [
   {
     label: 'Full Stack Developer Resume',
-    href: '/resumes/Jatla_Shivakumar_FullStack_Resume.pdf',
+    href: '/resumes/Jatla_Shivakumar_FullStack_Resume...pdf',
     description: 'React · Node.js · PostgreSQL · MongoDB',
   },
 ]
