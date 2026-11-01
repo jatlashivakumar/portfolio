@@ -24,7 +24,7 @@ const projects = [
     desc:'Production-grade distributed platform engineered end-to-end — microservice architecture, real-time data pipelines, and a high-performance React frontend. Every layer built for scale and reliability.',
     techs:['React','Node.js','PostgreSQL','Redis','TypeScript'],
     ci:[0,1,2,3,4],
-    github:'https://github.com/jatlashivakumar',
+    github:'https://github.com/jatlashivakumar/Nexus-Social-Media',
     color:'#2260ff', visual:'nexus', featured:true
   },
   
@@ -49,7 +49,7 @@ const projects = [
 
   ci: [0, 1, 2, 3, 4, 0, 1, 2, 3],
 
-  github: 'YOUR_ACTUAL_REPOSITORY_URL',
+    github:'https://github.com/jatlashivakumar/Stellar_Mission_Control',
 
   color: '#06b6d4',
   visual: 'stellar',
