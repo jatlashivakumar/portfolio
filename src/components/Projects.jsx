@@ -27,6 +27,37 @@ const projects = [
     github:'https://github.com/jatlashivakumar',
     color:'#2260ff', visual:'nexus', featured:true
   },
+  {
+  id: 'stellar-mission',
+  name: 'Stellar Mission Control',
+  tag: 'Satellite Operations & Telemetry Dashboard',
+
+  desc: 'An interactive satellite operations dashboard
+  featuring 3D Earth visualization, satellite fleet
+  monitoring, simulated telemetry updates, mission
+  event tracking and an interactive rule-based
+  mission assistant.',
+
+  techs: [
+    'Next.js',
+    'React',
+    'TypeScript',
+    'Three.js',
+    'React Three Fiber',
+    'Tailwind CSS',
+    'Framer Motion',
+    'GSAP',
+    'Lenis'
+  ],
+
+  ci: [0,1,2,3,4,0,1,2,3],
+
+  github: 'YOUR_ACTUAL_REPOSITORY_URL',
+
+  color: '#06b6d4',
+  visual: 'stellar',
+  featured: true
+}
 
 ]
 
