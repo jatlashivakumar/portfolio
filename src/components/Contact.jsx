@@ -159,7 +159,8 @@ export default function Contact() {
                 <a
                   key={resume.label}
                   href={resume.href}
-                  download
+                   target="_blank"
+                  rel="noopener noreferrer"
                   className="group cursor-none flex flex-col items-center text-center gap-3 rounded-2xl no-underline transition-all duration-300 hover:-translate-y-1.5 w-full max-w-sm"
                   style={{
                     padding: '28px 24px',
