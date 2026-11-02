@@ -64,7 +64,14 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-28 pb-20">
+  <section
+  id="home"
+  className="relative min-h-screen flex items-center pb-20"
+  style={{
+    paddingTop: '180px',
+    boxSizing: 'border-box',
+  }}
+>
       <Layout className="w-full"> 
         <motion.div variants={stagger} initial="hidden" animate="show">
           <motion.div
@@ -76,7 +83,7 @@ export default function Hero() {
             Full Stack Developer · Hyderabad, India
           </motion.div>
 
-          <div className="overflow-hidden mt-10 mb-4">
+          <div className="overflow-hidden mb-4">
             <motion.h1 variants={fadeUp} className="font-bold leading-none" style={{ fontFamily: 'Space Grotesk', fontSize: 'clamp(4rem,10vw,9rem)', letterSpacing: '-0.05em', color: '#eef0ff' }}>
               Jatla
             </motion.h1>
@@ -93,8 +100,10 @@ export default function Hero() {
             Full Stack Developer with <strong style={{ color: '#eef0ff' }}>3 years of experience</strong>, including an internship, building enterprise and government applications. Experienced in <strong style={{ color: '#00e5ff' }}>React, TypeScript, Node.js, Express, PostgreSQL and MongoDB</strong>, with hands-on work across REST APIs, authentication, role-based access control and DevOps. Currently at <strong style={{ color: '#00e5ff' }}>Real Variable Digital Asset Services</strong>.
           </motion.p>
 
-          <motion.div variants={fadeUp} className="flex flex-wrap gap-4 mb-16">
-            <button
+<motion.div
+  variants={fadeUp}
+  className="flex flex-wrap items-center gap-5 mt-7 mb-10"
+>            <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               className="cursor-none inline-flex items-center gap-2 rounded-lg text-white font-semibold border-none hover:-translate-y-0.5 transition-all duration-200 "
               style={{ fontFamily: 'Space Grotesk', fontSize: '.9rem', padding: '13px 28px', background: '#2260ff', boxShadow: '0 6px 28px rgba(34,96,255,0.35)' }}
