@@ -76,7 +76,7 @@ export default function Hero() {
             Full Stack Developer · Hyderabad, India
           </motion.div>
 
-          <div className="overflow-hidden mt-6 mb-4">
+          <div className="overflow-hidden mt-10 mb-4">
             <motion.h1 variants={fadeUp} className="font-bold leading-none" style={{ fontFamily: 'Space Grotesk', fontSize: 'clamp(4rem,10vw,9rem)', letterSpacing: '-0.05em', color: '#eef0ff' }}>
               Jatla
             </motion.h1>
