@@ -58,16 +58,6 @@ export default function NavBar() {
             ))}
           </ul>
 
-          <a
-            href="/resumes/Jatla_Shivakumar_FullStack_Resume.pdf"
-            download
-            className="cursor-none hidden md:inline-flex items-center gap-2 rounded-lg font-semibold no-underline hover:-translate-y-0.5 transition-all duration-200"
-            style={{ fontFamily: 'Space Grotesk', fontSize: '.82rem', padding: '10px 18px', background: 'rgba(34,96,255,0.16)', color: '#eef0ff', border: '1px solid rgba(34,96,255,0.35)' }}
-          >
-            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><path d="m7 10 5 5 5-5M12 15V3" /></svg>
-            Full Stack Resume
-          </a>
-
           <button onClick={() => setOpen(current => !current)} className="md:hidden cursor-none bg-transparent border-none flex flex-col gap-1 p-1" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={open}>
             {[0, 1, 2].map(item => <span key={item} className="w-5 h-0.5 transition-all duration-300" style={{ background: 'rgba(238,240,255,0.75)' }} />)}
           </button>
